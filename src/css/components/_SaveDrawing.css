@@ -1,0 +1,9 @@
+.pixel-art-react-container {
+  .save-drawing {
+    button {
+      @mixin button gray;
+
+      width: 100%;
+    }
+  }
+}

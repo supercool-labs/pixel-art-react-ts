@@ -1,0 +1,60 @@
+.pixel-art-react-container {
+  @media only screen and (max-width: 780px) {
+    .dimensions {
+      label {
+        font-size: 1.5em !important;
+        top: -0.2em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 730px) {
+    .app__copycss-button {
+      margin-top: 1.4em !important;
+    }
+
+    .app__preview-button {
+      margin-top: 1em !important;
+    }
+
+    body {
+      width: 100% !important;
+    }
+
+    /* Avoid button hover effect in mobile devices */
+    .app__load-save-container,
+    .new-project,
+    .frames-handler,
+    .app__right-side {
+      button:hover,
+      button.selected {
+        background-color: $color-mineShaft !important;
+      }
+    }
+
+    button.app__copycss-button {
+      &:hover,
+      &.selected {
+        background-color: $color-alto !important;
+      }
+    }
+
+    .app__toggle-help-button {
+      &:hover,
+      &.selected {
+        background-color: $color-chathamsBlue !important;
+      }
+    }
+
+    .load-drawing__import {
+      height: 10em !important;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    button,
+    .dimensions {
+      font-size: 0.8em !important;
+    }
+  }
+}

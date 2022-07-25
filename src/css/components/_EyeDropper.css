@@ -1,0 +1,9 @@
+.pixel-art-react-container {
+  .eyedropper {
+    @mixin icon eyedropper;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.pixel-art-react-container {
+  .cellinfo {
+    color: $color-silver;
+    text-align: center;
+    margin-top: 1em;
+  }
+}

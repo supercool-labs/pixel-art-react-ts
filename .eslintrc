@@ -1,0 +1,191 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint-config-prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["typechain", "src", "node_modules"]
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "forOf": true,
+      "jsx": true,
+      "es6": true
+    }
+  },
+  "plugins": ["react-hooks"],
+  "rules": {
+    "comma-dangle": 0,
+    "react/prop-types": 0,
+    "func-names": 0,
+    "arrow-body-style": [2, "as-needed"],
+    "no-underscore-dangle": ["error", { "allow": ["__INITIAL_STATE__"] }],
+    "no-use-before-define": "off",
+    "new-cap": ["error", { "capIsNewExceptions": ["Map", "List"] }],
+    "react/prefer-es6-class": 1,
+    "import/extensions": ["warn", { "js": "never", "ts": "never" }],
+    "no-restricted-syntax": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "quote-props": ["error", "consistent"],
+    "no-console": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-props-no-spreading": [0, { "custom": "ignore" }],
+    "react/jsx-one-expression-per-line": [0],
+    "react/destructuring-assignment": [0, "never"],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/label-has-for": [
+      2,
+      { "required": { "some": ["nesting", "id"] } }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "globals": {
+    "$": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "airbnb",
+        "eslint-config-prettier",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"],
+            "moduleDirectory": ["typechain", "src", "node_modules"]
+          }
+        }
+      },
+      "env": {
+        "browser": true,
+        "node": true,
+        "jest": true,
+        "es6": true
+      },
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "forOf": true,
+          "jsx": true,
+          "es6": true
+        }
+      },
+      "plugins": ["react-hooks", "@typescript-eslint"],
+      "rules": {
+        "comma-dangle": 0,
+        "react/prop-types": 0,
+        "func-names": 0,
+        "arrow-body-style": [2, "as-needed"],
+        "no-underscore-dangle": [
+          "error",
+          {
+            "allow": ["__INITIAL_STATE__"]
+          }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+          "error",
+          {
+            "functions": false,
+            "variables": false
+          }
+        ],
+        "new-cap": [
+          "error",
+          {
+            "capIsNewExceptions": ["Map", "List"]
+          }
+        ],
+        "react/prefer-es6-class": 1,
+        "import/extensions": [
+          "warn",
+          {
+            "js": "never",
+            "ts": "never"
+          }
+        ],
+        "no-restricted-syntax": 0,
+        "no-plusplus": [
+          "error",
+          {
+            "allowForLoopAfterthoughts": true
+          }
+        ],
+        "quote-props": ["error", "consistent"],
+        "no-console": 0,
+        "react/jsx-filename-extension": [
+          1,
+          {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        ],
+        "react/jsx-wrap-multilines": "off",
+        "react/jsx-props-no-spreading": [
+          0,
+          {
+            "custom": "ignore"
+          }
+        ],
+        "react/jsx-one-expression-per-line": [0],
+        "react/destructuring-assignment": [0, "never"],
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/label-has-for": [
+          2,
+          {
+            "required": {
+              "some": ["nesting", "id"]
+            }
+          }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/require-default-props": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/indent": 0,
+        "lines-between-class-members": 0,
+        "@typescript-eslint/lines-between-class-members": 0,
+        "@typescript-eslint/member-delimiter-style": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-extra-semi": 0,
+        "@typescript-eslint/no-empty-interface": 0,
+        "@typescript-eslint/no-unused-vars": [
+          2,
+          {
+            "argsIgnorePattern": "^_"
+          }
+        ],
+        "@typescript-eslint/no-empty-function": 0
+      },
+      "globals": {
+        "$": true
+      }
+    }
+  ]
+}

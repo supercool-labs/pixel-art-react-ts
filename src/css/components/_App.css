@@ -1,0 +1,95 @@
+.pixel-art-react-container.app {
+  .app__main-container {
+    lost-utility: clearfix;
+  }
+
+  .app__central-container {
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & > * {
+      flex-grow: 1;
+      margin-bottom: 2em;
+    }
+  }
+
+  .app__main {
+    margin-bottom: 2em;
+  }
+
+  .app__load-save-container {
+    margin-bottom: 2em;
+
+    .app__load-button {
+      @mixin button gray;
+    }
+
+    lost-utility: clearfix;
+
+    > div,
+    > button {
+      lost-column: 1/2 0 0.5em;
+    }
+  }
+
+  .app__download-button {
+    @mixin button brown;
+    @mixin icon download;
+
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .app__help-container {
+    lost-utility: clearfix;
+    margin: 1em 0;
+
+    > div {
+      lost-column: 1/2 0 0.5em;
+    }
+
+    .app__toggle-help-button {
+      @mixin button darkblue;
+      @mixin icon help;
+
+      &.selected {
+        box-shadow: 0 0 0 2px $color-silver;
+      }
+
+      width: 100%;
+    }
+
+    .app__shortcuts-button {
+      @mixin button darkblue;
+      @mixin icon keybindings;
+
+      width: 100%;
+    }
+  }
+
+  .app__copycss-button {
+    @mixin button white;
+
+    width: 100%;
+    margin-top: 1em;
+    font-weight: bold !important;
+    color: $color-mineShaft;
+  }
+
+  .app__preview-button {
+    @mixin button gray;
+
+    width: 100%;
+    margin: 0 0 0.6em;
+    display: table;
+  }
+
+  .app__left-wide {
+    margin-left: 1.5em;
+  }
+}
