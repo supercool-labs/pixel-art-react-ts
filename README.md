@@ -38,6 +38,15 @@ See it live at [pixelartcss](https://www.pixelartcss.com/)
 
 You can also import it directly submitting [this](examples/import-export/cat.txt) code.
 
+## Caveats about how to use this package
+
+You will want to build this package via `yarn build`. That runs Webpack and uses
+`src/lib-index.tsx` as the entrypoint.
+
+If you find references to `typechain` or `@supercool/ui-components` in the repo,
+you will have to replace that code with your own. Those exist because this
+package was part of a mono-repo and had access to other private packages.
+
 ## Technical overview
 
 This application has been built with the following technologies:
